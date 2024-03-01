@@ -1,0 +1,33 @@
+<!-- point-table.component.html -->
+
+<div class="flex py-3 px-10 justify-between">
+    <h1 class="text-gray-600 font-extrabold text-4xl">
+      Point Table
+    </h1>
+  </div>
+  
+  <div class="mt-4">
+    <table class="min-w-full border border-gray-300">
+      <thead>
+        <tr>
+          <th class="border bg-gray-100 p-2">Team</th>
+          <th class="border bg-gray-100 p-2">Matches Played</th>
+          <th class="border bg-gray-100 p-2">Wins</th>
+          <th class="border bg-gray-100 p-2">Draws</th>
+          <th class="border bg-gray-100 p-2">Losses</th>
+          <th class="border bg-gray-100 p-2">Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let team of pointTable">
+          <td class="border p-2">{{ team.name }}</td>
+          <td class="border p-2">{{ team.matchesPlayed }}</td>
+          <td class="border p-2">{{ team.wins }}</td>
+          <td class="border p-2">{{ team.draws }}</td>
+          <td class="border p-2">{{ team.losses }}</td>
+          <td class="border p-2">{{ team.points }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   
